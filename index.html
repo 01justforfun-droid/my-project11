@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #5a5a5a;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            color: #d88a8a;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .heart {
+            color: #d88a8a;
+            font-size: 50px;
+            margin-bottom: 20px;
+            display: inline-block;
+            animation: pulse 1.5s infinite;
+        }
+
+        .message {
+            line-height: 1.6;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .footer-note {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="heart">♥</div>
+        <h1>I'm Sorry</h1>
+        
+        <div class="message">
+            <p>Hey [Name],</p>
+            <p>I’ve been thinking a lot about what happened, and I truly regret how things went down. It was never my intention to hurt you or make things difficult.</p>
+            <p>I value you more than I can put into words, and I hope we can move past this. I'm truly sorry.</p>
+            </div>
+
+        <p class="footer-note">With sincerity, [Your Name]</p>
+    </div>
+
+</body>
+</html>
